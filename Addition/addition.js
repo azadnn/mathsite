@@ -61,13 +61,13 @@ function checkSolution() {
         console.log("After 2 seconds");
         theRightOrWrong.innerHTML = ''
         theTextBox.value = ''
-        theButton.disabled = false;
+        //theButton.disabled = false;
         if (currentQuestion >= totalNumQuestions) {
             document.body.innerHTML = `Questions gotten right: ${gottenRight}
     <br>Questions gotten wrong: ${wrongQuestions}
     <br>Total score: ${gottenRight}/${totalNumQuestions}`
         } else {
-            theButton.disabled = true;
+            //theButton.disabled = true;
             missingIndex = generateNewQuestion()
         }
 
