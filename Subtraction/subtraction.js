@@ -66,6 +66,7 @@ function checkSolution() {
     <br>Questions gotten wrong: ${wrongQuestions}
     <br>Total score: ${gottenRight}/${totalNumQuestions}`
         } else {
+            theButton.disabled = true;
             missingIndex = generateNewQuestion()
         }
 
