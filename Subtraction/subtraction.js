@@ -1,7 +1,7 @@
 // Add an event listener to the input field
 textbox.addEventListener('input', function () {
     // Check if the input field has any value (after trimming whitespace)
-    if (this.value.trim().length > 0) {
+    if (this.value.trim().length > 0 && Number.isNaN(this.value.trim()) == false) {
         // If it has text, enable the button
         solve.disabled = false;
     } else {
